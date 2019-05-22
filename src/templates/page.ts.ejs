@@ -1,0 +1,33 @@
+import { IStyledProps, WithStyles } from 'decorators/withStyles';
+import React, { PureComponent } from 'react';
+
+import styles from './styles';
+
+interface IProps extends IStyledProps {
+}
+
+interface IStates {
+}
+
+@WithStyles(styles)
+export default class <%= props.name.charAt(0).toLowerCase() + props.name.slice(1) %> extends PureComponent<IProps, IStates> {
+  constructor(props: IProps) {
+    super(props);
+
+    this.state = {};
+  }
+
+  public myFunction = async () => {}
+
+  public componentDidMount() {}
+
+  public componentWillUnmount() {}
+
+  public render(): React.ReactNode {
+    const { classes } = this.props;
+
+    return (
+      <div className={classes.<%= props.name.toLowerCase() %>} />
+    );
+  }
+}

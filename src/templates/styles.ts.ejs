@@ -1,0 +1,9 @@
+import { AppStyle } from 'decorators/withStyles';
+
+const styles: AppStyle = theme => ({
+   <%= props.name.charAt(0).toLowerCase() + props.name.slice(1) %>: {
+      width: '100%',
+   }
+});
+
+export default styles;
