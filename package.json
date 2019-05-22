@@ -1,7 +1,14 @@
 {
   "name": "jobzz-cli",
-  "version": "0.0.1",
-  "description": "jobzz-cli CLI",
+  "version": "0.0.2",
+  "description": "CLI (Command Line Interface) to streamline and standardize the creation of components and pages within a ReactJS application with Typescript.",
+  "author": {
+    "name": "Fernando Moraes"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ffernandomoraes/jobzz-cli"
+  },
   "bin": {
     "jobzz-cli": "bin/jobzz-cli"
   },
